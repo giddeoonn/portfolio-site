@@ -1,0 +1,348 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bordercolors: #183b72; /* use for nav bar border color */
+  --hovercolor: #4f83ff; /* use for hover effect over btn */
+  --gradientcolor: #6fa8ff; /* use for nice gradient color with #183b72 */
+  --wordscolor: #1a1a1a;
+  --backgroundcolor: #f4f8fc; /* the background color for the body */
+  --contactsectioncolor: #f0f4ff; /* can be use for about or contact section */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--backgroundcolor);
+  /* background: linear-gradient(#232526, #414345); */
+  overflow-x: hidden;
+  color: var(--wordscolor);
+}
+section {
+  height: 100vh;
+  max-width: 100%;
+  box-shadow: 0 0 1px 1px #e4e4e4;
+}
+h1 {
+  background-image: linear-gradient(
+    to right,
+    var(--gradientcolor),
+    var(--bordercolors)
+  );
+  /* background-image: linear-gradient(blue, darkblue); */
+  background-clip: text;
+  color: transparent;
+}
+
+/* NAV BAR */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  top: 3.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--bordercolors);
+  border-radius: 50px;
+  z-index: 100;
+}
+nav .logo h1 {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bordercolors),
+    var(--gradientcolor)
+  );
+  /* background-image: linear-gradient(135deg, darkblue, blue); */
+  background-clip: text;
+  color: transparent;
+  transition: 0.3s ease-in-out;
+}
+nav .logo h1:hover {
+  background-image: linear-gradient(var(--bordercolors), var(--gradientcolor));
+  /* background-image: linear-gradient(135deg, blue, darkblue); */
+  transform: scale(1.1);
+  cursor: pointer;
+}
+nav .nav-links ul,
+li,
+a {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  gap: 2rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #213448;
+}
+nav .nav-links ul li a:hover {
+  background-image: linear-gradient(var(--bordercolors), var(--gradientcolor));
+  /* background-image: linear-gradient(darkblue, blue); */
+  background-clip: text;
+  color: transparent;
+}
+.off-screen-menu {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .nav-links {
+    display: none;
+  }
+  .off-screem-menu {
+    display: block;
+    position: fixed;
+    top: 4rem;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--backgroundcolor);
+  }
+  .off-screem-menu ul li a {
+    font-size: 2rem;
+  }
+  nav {
+    width: 100%;
+    border-radius: 0;
+    top: 2.5rem;
+  }
+  nav .logo {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .logo h1 {
+    font-size: 3rem;
+    padding: 0.2rem 0;
+  }
+  nav .nav-links {
+    display: none;
+  }
+}
+
+/* HOME SECTION */
+#home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10%;
+}
+#home .text-intro h1 {
+  font-size: 5rem;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bordercolors),
+    var(--gradientcolor)
+  );
+  background-clip: text;
+  color: transparent;
+}
+#home .text-intro p {
+  font-weight: bold;
+}
+#home .btn-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+#home .btn-intro a {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: var(--bordercolors);
+  border-radius: 5px;
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  transition: 0.3s ease-in-out;
+}
+#home .btn-intro a:hover {
+  background-color: var(--hovercolor);
+}
+#home .pfp {
+  height: 60vh;
+  width: 35%;
+}
+#home .pfp img {
+  width: 100%;
+  border: 5px solid var(--bordercolors);
+  border-radius: 50%;
+  box-shadow: 0 0 12px 12px #e4e4e4;
+}
+
+/* SKILLS/TECH SECTION */
+#skills {
+  background-color: var(--contactsectioncolor);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  padding-top: 7rem;
+  padding-bottom: 5.5rem;
+}
+#skills .skillset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+#skills .skillset img {
+  width: 10rem;
+  height: 8rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+  /* box-shadow: 0 0 2px 2px #e4e4e4; */
+}
+#skills .skillset img:hover {
+  transform: scale(1.2);
+}
+
+/* PROJECT SECTION */
+#projects {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+  padding-top: 7rem;
+  /* box-shadow: 0 2px 2px #e4e4e4; */
+}
+#projects .proj-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2.5rem;
+  padding-top: 2rem;
+}
+#projects .proj-container .proj-cards {
+  height: 60vh;
+  width: 50vh;
+  border: 2px solid var(--bordercolors);
+  border-radius: 15px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+#projects .proj-container .proj-cards:hover {
+  transform: scale(1.1);
+}
+#projects .proj-container .proj-cards img {
+  margin: 0.5rem;
+  height: 50%;
+  width: 80%;
+  border: 2px solid;
+}
+
+/* CONTACT SECTION */
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  padding-top: 6rem;
+  background-color: var(--contactsectioncolor);
+}
+#contact .about h1 {
+  text-align: center;
+}
+#contact .about {
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  height: 80%;
+  width: 80%;
+  margin: 1rem;
+  /* padding: 1.5rem; */
+  border-right: 2px solid #e4e4e4;
+  /* box-shadow: 0 0 3px 2px #e4e4e4;
+  border-radius: 20px;
+  background-color: white; */
+}
+#contact .about p {
+  margin: 0 5rem;
+}
+#contact .about .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+#contact .contact {
+  justify-content: justify;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  margin: 1rem;
+  /* box-shadow: 0 0 3px 2px #e4e4e4; */
+  /* border-radius: 20px; */
+  /* background-color: white; */
+}
+#contact .contact input {
+  margin: 1rem 0;
+  height: 5vh;
+  width: 80%;
+  padding: 1rem;
+  border: 3px solid var(--bordercolors);
+  border-radius: 10px;
+}
+#contact .contact #userMESSAGE {
+  margin: 1rem 0;
+  height: 100px;
+  width: 80%;
+  padding: 1rem;
+  resize: none;
+  border: 3px solid var(--bordercolors);
+  border-radius: 10px;
+}
+#contact .contact button {
+  margin-left: 60.5%;
+  height: 5vh;
+  width: 20%;
+  background-color: #183b72;
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+#contact .contact button:hover {
+  background-color: var(--hovercolor);
+}
+footer {
+  /* margin-top: 5rem; */
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  background-color: var(--bordercolors);
+  color: white;
+  padding: 0.5rem 1rem;
+  gap: 5px;
+}
+footer .socials,
+.social {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+  gap: 5px;
+}
