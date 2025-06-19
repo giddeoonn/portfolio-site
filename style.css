@@ -450,7 +450,7 @@ footer .socials,
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25%;
+    padding-top: 5rem;
     width: 100%;
   }
   #home .pfp img {
@@ -640,7 +640,7 @@ footer .socials,
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    padding-top: 5rem;
     width: 100%;
   }
   #home .pfp img {
