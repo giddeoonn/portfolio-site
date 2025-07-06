@@ -273,6 +273,11 @@ nav .nav-links ul li a:hover {
   background-clip: text;
   color: transparent;
 }
+#projects .proj-container #third_project h3 {
+  background-image: linear-gradient(to bottom right, orange, rgb(224, 166, 60));
+  background-clip: text;
+  color: transparent;
+}
 #projects .proj-container .proj-cards p {
   text-align: left;
   margin: 0.5rem 2rem;
