@@ -216,7 +216,8 @@ nav .nav-links ul li a:hover {
 #projects .proj-container #second_project {
   border: 5px solid var(--bordercolors);
 }
-#project .proj-container #third_project {
+#projects .proj-container #third_project {
+  box-shadow: 0 0 4px 4px rgb(230, 153, 10);
 }
 #projects .proj-container .proj-cards .project-btn {
   justify-content: center;
@@ -242,8 +243,12 @@ nav .nav-links ul li a:hover {
   color: white;
 }
 #projects .proj-container .proj-cards #third_project-btn {
+  border: 2px solid rgb(230, 153, 10);
+  color: orange;
 }
 #projects .proj-container .proj-cards #third_project-btn:hover {
+  background-color: rgb(230, 153, 10);
+  color: white;
 }
 #projects .proj-container .proj-cards:hover {
   transform: scale(1.1);
