@@ -181,16 +181,32 @@
           <div class="contact">
             <h1>CONTACT</h1>
             <br />
-            <form action="">
-              <input id="userNAME" type="text" placeholder="Name" /><br />
-              <input id="userEMAIL" type="text" placeholder="Email" /><br />
+            <form
+              action="https://formsubmit.co/giddeoonn@gmail.com"
+              method="POST"
+            >
+              <input
+                id="userNAME"
+                name="name"
+                type="text"
+                placeholder="Name"
+                required
+              /><br />
+              <input
+                id="userEMAIL"
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+              /><br />
               <textarea
                 id="userMESSAGE"
-                type="text"
-                placeholder="Message - CONTACT IS CURRENTLY WORK IN PROGRESS "
+                name="message"
+                placeholder="Message"
+                required
               ></textarea
               ><br />
-              <button>Send</button>
+              <button type="submit">Send</button>
             </form>
           </div>
         </section>
