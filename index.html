@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <title>Welcome to my Portfolio</title>
+    <link rel="icon" type="image/png" href="images/pfp.png" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link
       rel="stylesheet"
@@ -13,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="main-container">
       <div class="blur"></div>
       <header>
         <!-- THE SLIDE THAT WILL SHOW WHEN THE USER CLICKS THE HAM MENU -->
@@ -24,7 +25,7 @@
             <a href="#skills">Tech</a>
             <a href="#projects">Projects</a>
             <a href="#contact">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact_form">Contact</a>
           </div>
         </div>
 
@@ -57,157 +58,250 @@
       <main>
         <!-- THE HOME SECTION -->
         <section id="home">
-          <div class="text-intro">
-            <p>
-              Hi, I'm <br />
-              <span><h1>GiDEON</h1></span>
-            </p>
-            <p>A Web Developer from the Philippines</p>
-            <div class="btn-intro">
-              <a href="#projects"
-                ><i class="fa-solid fa-feather"> See My Work</i></a
-              >
-              <a href="#contact"
-                ><i class="fa-solid fa-paper-plane"> Contact Me</i></a
-              >
+          <div class="container">
+            <div class="text-intro">
+              <p>
+                Hi, I'm <br />
+                <span><h1>GiDEON</h1></span>
+              </p>
+              <p>A Web Developer from the Philippines</p>
+              <div class="btn-intro">
+                <a href="#projects"
+                  ><i class="fa-solid fa-feather"> See My Work</i></a
+                >
+                <a href="#contact_form"
+                  ><i class="fa-solid fa-paper-plane"> Contact Me</i></a
+                >
+              </div>
             </div>
+            <div class="pfp"><img src="images/pfp.png" alt="pfp" /></div>
           </div>
-          <div class="pfp"><img src="images/pfp.png" alt="pfp" /></div>
         </section>
 
         <!-- THE SKILL/TECH SECTION  -->
         <section id="skills">
-          <h1>TECHNOLOGIES</h1>
-          <h3>I've Worked With</h3>
-          <br />
-          <div class="skillset">
-            <img src="images/skills/html.png" alt="html" />
-            <img src="images/skills/css.png" alt="css" />
-            <img src="images/skills/javascript.png" alt="js" />
-            <img src="images/skills/java.png" alt="java" />
-            <img src="images/skills/php.png" alt="php" />
-            <img src="images/skills/mysqldb.png" alt="mysql" />
+          <div class="container">
+            <h1>TECHNOLOGIES</h1>
+            <h3>I've Worked With</h3>
+            <br />
+            <div class="skillset">
+              <img src="images/skills/html.png" alt="html" />
+              <img src="images/skills/css.png" alt="css" />
+              <img src="images/skills/javascript.png" alt="js" />
+              <img src="images/skills/java.png" alt="java" />
+              <img src="images/skills/php.png" alt="php" />
+              <img src="images/skills/mysqldb.png" alt="mysql" />
+            </div>
           </div>
         </section>
 
         <!-- THE PROJECT SECTION -->
         <section id="projects">
-          <h1>PROJECTS</h1>
-          <h3>A Look at What I've Built So Far</h3>
-          <div class="proj-container">
-            <!-- 1st Project -->
-            <div id="first_project" class="proj-cards">
-              <img src="images/projects/coffee-shop.png" alt="ehe" />
-              <h3>Coffee Shop</h3>
-              <p>- Responsive coffee shop website</p>
-              <p>- Features separate Home, Product, and Contact pages</p>
-              <p>- Built with HTML, CSS, and JavaScript</p>
-              <p>
-                <a
-                  id="first_project-btn"
-                  class="project-btn"
-                  href="https://giddeoonn.github.io/coffeeshop-site/"
-                  target="_blank"
-                  >View Website</a
-                >
-              </p>
-            </div>
-
-            <!-- 2nd Project -->
-            <div id="second_project" class="proj-cards">
-              <div class="badge">
-                <i class="fa-solid fa-diagram-project"> My First Client</i>
+          <div class="container">
+            <h1>PROJECTS</h1>
+            <h3>A Look at What I've Built So Far</h3>
+            <div class="proj-container">
+              <!-- 1st Project -->
+              <div id="first_project" class="proj-cards">
+                <img src="images/projects/coffee-shop.png" alt="ehe" />
+                <h3>Coffee Shop</h3>
+                <p>- Responsive coffee shop website</p>
+                <p>- Features separate Home, Product, and Contact pages</p>
+                <p>- Built with HTML, CSS, and JavaScript</p>
+                <p>
+                  <a
+                    id="first_project-btn"
+                    class="project-btn"
+                    href="https://giddeoonn.github.io/coffeeshop-site/"
+                    target="_blank"
+                    >View Website</a
+                  >
+                </p>
               </div>
-              <img src="images/projects/jadtravel&tours.png" alt="ehe" />
-              <h3>JAD TRAVEL & TOURS</h3>
-              <p>- A responsive travel agency website</p>
-              <p>- Focused on user-friendly structure and readable content</p>
-              <p>
-                - Deployed using Netlify for free hosting per client's
-                preference
-              </p>
-              <p>- Built with HTML, CSS, and JavaScript</p>
-              <p>
-                <a
-                  id="second_project-btn"
-                  class="project-btn"
-                  href="https://jad-travel-and-tours.netlify.app/"
-                  target="_blank"
-                  >View Website</a
-                >
-              </p>
-            </div>
 
-            <!-- 3rd Project -->
-            <div id="third_project" class="proj-cards">
-              <img src="images/projects/burgershop.png" alt="ehe" />
-              <h3>Byte Burger</h3>
-              <p>- A playful and responsive burger shop website</p>
-              <p>- Features multi-page layout: Home, Menu, About Us, Contact</p>
-              <p>
-                - Mobile-first design with tech-inspired branding and layout
-              </p>
-              <p>- Built with HTML, CSS and JavaScript</p>
-              <p>
-                <a
-                  id="third_project-btn"
-                  class="project-btn"
-                  href="https://giddeoonn.github.io/byteburgershop-site/"
-                  target="_blank"
-                  >View Website</a
-                >
-              </p>
+              <!-- 2nd Project -->
+              <div id="second_project" class="proj-cards">
+                <div class="badge">
+                  <i class="fa-solid fa-diagram-project"> My First Client</i>
+                </div>
+                <img src="images/projects/jadtravel&tours.png" alt="ehe" />
+                <h3>JAD TRAVEL & TOURS</h3>
+                <p>- A responsive travel agency website</p>
+                <p>- Focused on user-friendly structure and readable content</p>
+                <p>
+                  - Deployed using Netlify for free hosting per client's
+                  preference
+                </p>
+                <p>- Built with HTML, CSS, and JavaScript</p>
+                <p>
+                  <a
+                    id="second_project-btn"
+                    class="project-btn"
+                    href="https://jad-travel-and-tours.netlify.app/"
+                    target="_blank"
+                    >View Website</a
+                  >
+                </p>
+              </div>
+
+              <!-- 3rd Project -->
+              <div id="third_project" class="proj-cards">
+                <img src="images/projects/burgershop.png" alt="ehe" />
+                <h3>Byte Burger</h3>
+                <p>- A playful & responsive burger shop websites</p>
+                <p>
+                  - Features multi-page layout: Home, Menu, About Us, Contact
+                </p>
+                <p>
+                  - Mobile-first design with tech-inspired branding and layout
+                </p>
+                <p>- Built with HTML, CSS and JavaScript</p>
+                <p>
+                  <a
+                    id="third_project-btn"
+                    class="project-btn"
+                    href="https://giddeoonn.github.io/byteburgershop-site/"
+                    target="_blank"
+                    >View Website</a
+                  >
+                </p>
+              </div>
+
+              <!-- 4th Project -->
+              <div id="fourth_project" class="proj-cards">
+                <img
+                  src="images/projects/brightmind-tutorialhub.png"
+                  alt="ehe"
+                />
+                <h3>BrightMind Tutorial Hub</h3>
+                <p>- One-page responsive fictional tutorial center website</p>
+                <p>
+                  - Includes Home, Programs, About Us, Testimonials, and Contact
+                  sections
+                </p>
+                <p>
+                  - Tried making sure the layout stays intact even when zoomed
+                  in or out
+                </p>
+                <p>- Built with HTML, CSS, and JavaScript</p>
+                <p>
+                  <a
+                    id="fourth_project-btn"
+                    class="project-btn"
+                    href="https://giddeoonn.github.io/brightmind-tutorial-hub-site/"
+                    target="_blank"
+                    >View Website</a
+                  >
+                </p>
+              </div>
+
+              <!-- 5th Project -->
+              <div id="fifth_project" class="proj-cards">
+                <img
+                  src="images/projects/deliciousbites-catering.png"
+                  alt="ehe"
+                />
+                <h3>Delicious Bites Catering</h3>
+                <p>- One-page responsive fictional catering website</p>
+                <p>
+                  - Showcases Home, About, Menu, Packages, Gallery and Contact
+                  section
+                </p>
+                <p>
+                  - Finally tried adding simple animations for a smoother
+                  experience
+                </p>
+                <p>- Built with HTML, CSS, and JavaScript</p>
+                <p>
+                  <a
+                    id="fifth_project-btn"
+                    class="project-btn"
+                    href="https://giddeoonn.github.io/delicious-bites-catering-site/"
+                    target="_blank"
+                    >View Website</a
+                  >
+                </p>
+              </div>
+
+              <!-- 6th Project -->
+              <div id="sixth_project" class="proj-cards">
+                <img src="images/projects/harmoney-fam_clinic.png " alt="ehe" />
+                <h3>Harmoney Family Clinic</h3>
+                <p>
+                  - A clean & responsive website for a fictional family clinic
+                </p>
+                <p>
+                  - Features single-page layout: Home, Services, About,
+                  Facilities, Contact
+                </p>
+                <p>
+                  - Calm green & cream color palette for a professional and
+                  welcoming feel
+                </p>
+                <p>- Built with HTML, CSS and JavaScript</p>
+                <p>
+                  <a
+                    id="sixth_project-btn"
+                    class="project-btn"
+                    href="https://giddeoonn.github.io/harmoney-family-clinic-site/"
+                    target="_blank"
+                    >View Website</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- ABOUT AND CONTACT SECTION -->
         <section id="contact">
-          <!-- ABOUT ME -->
-          <div class="about">
-            <h1>ABOUT ME</h1>
-            <br />
-            <p>
-              I'm a web developer who likes building clean, responsive websites
-              and web applications. I enjoy turning ideas into functional,
-              user-friendly digital experiences. <br /><br />
-              Lately, I've been interested and diving deeper into PHP, MySQL,
-              and documenting my growth through Youtube. Thanks for stopping by,
-              and feel free to reach out if you'd like to connect or
-              collaborate!
-            </p>
-          </div>
-          <!-- GET TO KNOW ME -->
-          <div class="contact">
-            <h1>CONTACT</h1>
-            <br />
-            <form
-              action="https://formsubmit.co/giddeoonn@gmail.com"
-              method="POST"
-            >
-              <input
-                id="userNAME"
-                name="name"
-                type="text"
-                placeholder="Name"
-                required
-              /><br />
-              <input
-                id="userEMAIL"
-                name="email"
-                type="email"
-                placeholder="Email"
-                required
-              /><br />
-              <textarea
-                id="userMESSAGE"
-                name="message"
-                placeholder="Message"
-                required
-              ></textarea
-              ><br />
-              <button type="submit">Send</button>
-            </form>
+          <div class="container">
+            <!-- ABOUT ME -->
+            <div class="about">
+              <h1>ABOUT ME</h1>
+              <br />
+              <p>
+                I'm a web developer who likes building clean, responsive
+                websites and web applications. I enjoy turning ideas into
+                functional, user-friendly digital experiences. <br /><br />
+                Lately, I've been interested and diving deeper into PHP, MySQL,
+                and documenting my growth through Youtube. Thanks for stopping
+                by, and feel free to reach out if you'd like to connect or
+                collaborate!
+              </p>
+            </div>
+            <!-- GET TO KNOW ME -->
+            <div id="contact_form" class="contact">
+              <h1>CONTACT</h1>
+              <br />
+              <form
+                action="https://formsubmit.co/giddeoonn@gmail.com"
+                method="POST"
+              >
+                <input
+                  id="userNAME"
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                  required
+                /><br />
+                <input
+                  id="userEMAIL"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                /><br />
+                <textarea
+                  id="userMESSAGE"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea
+                ><br />
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </div>
         </section>
       </main>
@@ -215,8 +309,7 @@
       <!-- FOOTER SECTION -->
       <footer>
         <p class="socials">
-          <a class="social" href="http://github.com/giddeoonn" 
-            target="_blank"
+          <a class="social" href="http://github.com/giddeoonn" target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
           <a
