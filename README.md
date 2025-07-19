@@ -1,7 +1,7 @@
-Personal Portfolio Website (Early Phase)
+Personal Portfolio Website
 
-This is my personal portfolio website. It's currently a work in progress and still in its early development stage.  
-The goal is to eventually showcase my projects, skills, and contact information in one place.
+This is my personal portfolio website. Finally finished important sections,  
+now the goal is to eventually showcase my projects, skills, and contact information in one place.
 
 🔧 Tech Used
 - HTML5
