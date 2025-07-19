@@ -23,5 +23,5 @@ now the goal is to eventually showcase my projects, skills, and contact informat
 This project helps me practice front-end web development and track my growth. I'm still improving my skills in JavaScript, PHP, and MySQL, and I plan to update this site as I learn more.
 
 📫 Contact Me
-You can reach out through the contact section (coming soon) or check back later as I continue building this out!
+You can now reach out through the contact section or check back later as I continue building more projects!
 
