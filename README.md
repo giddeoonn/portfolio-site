@@ -9,8 +9,8 @@ The goal is to eventually showcase my projects, skills, and contact information 
 - JavaScript
 
 🚧 Current Status
-- ❌ No mobile/tablet responsiveness yet  
-- ❌ No project entries yet  
+- ✅ No mobile/tablet responsiveness yet  
+- ✅ No project entries yet  
 - ✅ Desktop version layout in progress  
 - ✅ Basic navigation and sections started
 
