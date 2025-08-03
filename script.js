@@ -7,7 +7,15 @@ hamMenu.addEventListener("click", () => {
   offScreenMenu.classList.toggle("active");
   blurEffect.classList.toggle("active");
 });
+offScreenMenu.addEventListener("click", () => {
+  offScreenMenu.classList.remove("active");
+  blurEffect.classList.remove("active");
+});
 closeMenu.addEventListener("click", () => {
+  offScreenMenu.classList.remove("active");
+  blurEffect.classList.remove("active");
+});
+blurEffect.addEventListener("click", () => {
   offScreenMenu.classList.remove("active");
   blurEffect.classList.remove("active");
 });

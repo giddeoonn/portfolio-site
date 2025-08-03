@@ -112,6 +112,7 @@ nav .nav-links ul li a:hover {
   align-items: center;
   text-align: center;
   gap: 10%;
+  max-height: 900px;
 }
 #home .container {
   display: flex;
@@ -119,7 +120,7 @@ nav .nav-links ul li a:hover {
   align-items: center;
   text-align: center;
   gap: 2rem;
-  margin-top: 9%;
+  padding-top: 5rem;
 }
 #home .text-intro {
   margin-left: 5%;
@@ -183,6 +184,7 @@ nav .nav-links ul li a:hover {
   height: 60vh;
   padding-top: 7rem;
   padding-bottom: 5.5rem;
+  max-height: 450px;
 }
 #skills .container {
   display: flex;
@@ -240,10 +242,10 @@ nav .nav-links ul li a:hover {
   line-height: 1.4;
 }
 #projects .proj-container #first_project {
-  border: 4px solid #715240;
+  border: 5px solid var(--bordercolors);
 }
 #projects .proj-container #second_project {
-  border: 5px solid var(--bordercolors);
+  border: 5px solid #f1b24a;
 }
 #projects .proj-container #third_project {
   border: 5px solid rgb(230, 153, 10);
@@ -257,6 +259,12 @@ nav .nav-links ul li a:hover {
 #projects .proj-container #sixth_project {
   border: 5px solid green;
 }
+#projects .proj-container #seventh_project {
+  border: 5px solid #42a5f5;
+}
+#projects .proj-container #eight_project {
+  border: 4px solid #715240;
+}
 #projects .proj-container .proj-cards .project-btn {
   justify-content: center;
   font-size: 1.3rem;
@@ -264,20 +272,26 @@ nav .nav-links ul li a:hover {
   transition: 0.2s ease-in-out;
 }
 #projects .proj-container .proj-cards #first_project-btn {
-  border: 2px solid #715240;
-  color: #715240;
-  margin-top: 3rem;
-}
-#projects .proj-container .proj-cards #first_project-btn:hover {
-  background-color: #715240;
-  color: white;
-}
-#projects .proj-container .proj-cards #second_project-btn {
   border: 2px solid var(--bordercolors);
   color: #183b72;
+
+  /* border: 2px solid #715240;
+  color: #715240;
+  margin-top: 3rem; */
+}
+#projects .proj-container .proj-cards #first_project-btn:hover {
+  background-color: var(--bordercolors);
+  color: white;
+
+  /* background-color: #715240;
+  color: white; */
+}
+#projects .proj-container .proj-cards #second_project-btn {
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
 }
 #projects .proj-container .proj-cards #second_project-btn:hover {
-  background-color: var(--bordercolors);
+  background-color: #f1c40f;
   color: white;
 }
 #projects .proj-container .proj-cards #third_project-btn {
@@ -324,15 +338,19 @@ nav .nav-links ul li a:hover {
   border-top-right-radius: 10px;
 }
 #projects .proj-container #first_project h3 {
-  background-image: linear-gradient(to bottom right, #715240, #a47458);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bordercolors),
+    var(--hovercolor)
+  );
   background-clip: text;
   color: transparent;
 }
 #projects .proj-container #second_project h3 {
   background-image: linear-gradient(
     to bottom right,
-    var(--bordercolors),
-    var(--hovercolor)
+    #f1c40f,
+    rgb(224, 166, 60)
   );
   background-clip: text;
   color: transparent;
@@ -359,6 +377,35 @@ nav .nav-links ul li a:hover {
   color: transparent;
 }
 /* 2nd ROW */
+/* 3rd ROW */
+#projects .proj-container #seventh_project h3 {
+  background-image: linear-gradient(to bottom right, #42a5f5, #7986cb);
+  background-clip: text;
+  color: transparent;
+}
+#projects .proj-container #eight_project h3 {
+  background-image: linear-gradient(to bottom right, #715240, brown);
+  background-clip: text;
+  color: transparent;
+}
+#projects .proj-container .proj-cards #seventh_project-btn {
+  border: 2px solid #42a5f5;
+  color: #42a5f5;
+}
+#projects .proj-container .proj-cards #seventh_project-btn:hover {
+  background-color: #42a5f5;
+  color: white;
+}
+#projects .proj-container .proj-cards #eight_project-btn {
+  border: 2px solid #715240;
+  color: #715240;
+  margin-top: 3rem;
+}
+#projects .proj-container .proj-cards #eight_project-btn:hover {
+  background-color: #715240;
+  color: white;
+}
+/* 3rd ROW */
 #projects .proj-container .proj-cards p {
   text-align: left;
   margin: 0.5rem 2rem;
@@ -383,8 +430,8 @@ nav .nav-links ul li a:hover {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  height: 70vh;
-  padding-top: 6rem;
+  max-height: 500px;
+  padding: 1rem;
   background-color: var(--contactsectioncolor);
 }
 #contact .container {
@@ -409,13 +456,12 @@ nav .nav-links ul li a:hover {
 #contact .contact {
   justify-content: justify;
   align-items: center;
-  height: 80%;
   width: 100%;
   border-left: 2px solid #e4e4e4;
 }
 #contact .contact input {
   margin: 1rem 0;
-  height: 5vh;
+  height: 50px;
   width: 80%;
   padding: 1rem;
   border: 3px solid var(--bordercolors);
@@ -424,7 +470,7 @@ nav .nav-links ul li a:hover {
 #contact .contact #userMESSAGE {
   font-family: Arial, Helvetica, sans-serif;
   margin: 1rem 0;
-  height: 100px;
+  height: 130px;
   width: 80%;
   padding: 1rem;
   resize: none;
@@ -432,11 +478,12 @@ nav .nav-links ul li a:hover {
   border-radius: 10px;
 }
 #contact .contact button {
-  margin-left: 60.5%;
-  height: 5vh;
-  width: 20%;
+  margin-left: 50%;
+  height: 50px;
+  width: 30%;
   background-color: #183b72;
   color: white;
+  border-radius: 10px;
   border: none;
   transition: 0.3s ease-in-out;
 }
@@ -563,6 +610,7 @@ footer .socials,
   #skills {
     padding-top: 25%;
     height: auto;
+    max-height: 900px;
   }
   #skills .skillset {
     display: grid;
@@ -612,6 +660,7 @@ footer .socials,
   #contact {
     flex-direction: column;
     height: auto;
+    max-height: 9000px;
     width: 100%;
     padding-top: 5rem;
   }
@@ -669,7 +718,7 @@ footer .socials,
 }
 
 /* TABLET RESPONSIVENESS */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /* NAV BAR */
   #desktop-nav {
     display: none;
@@ -765,6 +814,7 @@ footer .socials,
   #skills {
     padding-top: 12%;
     height: auto;
+    max-height: 9000px;
   }
   #skills .skillset {
     display: grid;
@@ -790,7 +840,7 @@ footer .socials,
   #projects .proj-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    padding: 5rem;
+    padding: 1.5rem;
     padding-top: 5%;
     width: 100%;
   }
@@ -813,19 +863,19 @@ footer .socials,
   #contact {
     flex-direction: column;
     height: auto;
+    max-height: 9000px;
     width: 100%;
-    padding-top: 5rem;
+    padding: 1rem;
   }
   #contact .about h1 {
     text-align: center;
   }
   #contact .about {
-    height: 80%;
     width: 100%;
     margin: 0;
-    padding-bottom: 5rem;
-    border-bottom: 2px solid #e4e4e4;
-    text-align: center;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    text-align: justify;
   }
   #contact .about p {
     margin: 0 1rem;
@@ -833,7 +883,7 @@ footer .socials,
   #contact .contact {
     justify-content: justify;
     align-items: center;
-    height: 80%;
+    max-height: 900px;
     width: 100%;
     margin: 2rem 0;
   }
